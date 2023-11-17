@@ -41,6 +41,8 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private string[] feedbackMessage;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip correctAnswerAudioClip;
 
     // Start is called before the first frame update
     void Start()
@@ -110,6 +112,8 @@ public class GameController : MonoBehaviour
         if (textButtonAnswer.text.Equals(questions[currentQuestionScriptableObject].answer))
         {
             correctAnswers++;
+            audioSource.PlayOneShot(correctAnswerAudioClip);
+
         }
 
         currentQuestionNumber++;

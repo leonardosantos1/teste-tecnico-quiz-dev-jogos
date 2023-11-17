@@ -257,6 +257,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74780226}
   m_CullTransparentMesh: 1
+--- !u!1 &145915244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 145915246}
+  - component: {fileID: 145915245}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &145915245
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145915244}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &145915246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145915244}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -535.25586, y: 2767.3848, z: 1638630.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148080470
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,18 +576,23 @@ MonoBehaviour:
   alternativeParentB: {fileID: 1232951604}
   alternativeParentC: {fileID: 770026477}
   alternativeParentD: {fileID: 620272279}
-  correctAnswersText: {fileID: 0}
-  currentQuestionNumberText: {fileID: 0}
-  currentQuestionText: {fileID: 0}
+  correctAnswersText: {fileID: 2102830653}
+  currentQuestionNumberText: {fileID: 993147630}
+  askQuestionText: {fileID: 74780228}
   textButtonA: {fileID: 0}
   textButtonB: {fileID: 0}
   textButtonC: {fileID: 0}
   textButtonD: {fileID: 0}
-  feedBackFinishText: {fileID: 0}
-  totalQuestionsFinish: {fileID: 0}
-  totalQuestions: {fileID: 0}
+  feedBackFinishText: {fileID: 247192923}
+  totalQuestionsFinish: {fileID: 492218185}
+  totalQuestions: {fileID: 568016776}
   currentQuestionScriptableObject: 0
-  feedbackMessage: []
+  feedbackMessage:
+  - "Voc\xEA achou que qualquer op\xE7\xE3o era correta? :("
+  - Muito bom!!!
+  - "Parab\xE9ns!!!!!! Voc\xEA acertou todas!!"
+  audioSource: {fileID: 145915245}
+  correctAnswerAudioClip: {fileID: 8300000, guid: 74f59223291736741bd6231047a9dd47, type: 3}
 --- !u!1 &247192921
 GameObject:
   m_ObjectHideFlags: 0
@@ -3066,3 +3199,4 @@ SceneRoots:
   - {fileID: 1330532360}
   - {fileID: 1911823675}
   - {fileID: 226632107}
+  - {fileID: 145915246}

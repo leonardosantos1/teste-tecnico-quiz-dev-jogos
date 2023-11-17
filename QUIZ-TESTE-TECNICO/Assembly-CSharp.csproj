@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Question.cs" />
+    <Compile Include="Assets\Scripts\StartGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
