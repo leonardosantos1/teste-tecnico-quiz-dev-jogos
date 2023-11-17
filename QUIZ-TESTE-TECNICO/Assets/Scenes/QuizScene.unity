@@ -391,6 +391,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148080470}
   m_CullTransparentMesh: 1
+--- !u!1 &226632106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 226632107}
+  - component: {fileID: 226632108}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &226632107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226632106}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -535.25586, y: 2767.3848, z: 1638630.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &226632108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226632106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd06d42379d20b2458483cbda076f1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questions:
+  - {fileID: 11400000, guid: 260f9fc6e70a9c74db5404a3073fef1a, type: 2}
+  - {fileID: 11400000, guid: 133389f0fb14289488f4849f25813125, type: 2}
+  - {fileID: 11400000, guid: 5067d9a204df1ac4aa2e82d8465a6b2f, type: 2}
+  correctAnswers: 0
+  alternativeA: {fileID: 1231621887}
+  alternativeB: {fileID: 1498707766}
+  alternativeC: {fileID: 1347947554}
+  alternativeD: {fileID: 292394431}
+  alternativeParentA: {fileID: 872299829}
+  alternativeParentB: {fileID: 1232951604}
+  alternativeParentC: {fileID: 770026477}
+  alternativeParentD: {fileID: 620272279}
+  correctAnswersText: {fileID: 0}
+  currentQuestionNumberText: {fileID: 0}
+  currentQuestionText: {fileID: 0}
+  textButtonA: {fileID: 0}
+  textButtonB: {fileID: 0}
+  textButtonC: {fileID: 0}
+  textButtonD: {fileID: 0}
+  feedBackFinishText: {fileID: 0}
+  totalQuestionsFinish: {fileID: 0}
+  totalQuestions: {fileID: 0}
+  currentQuestionScriptableObject: 0
+  feedbackMessage: []
 --- !u!1 &247192921
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,3 +3065,4 @@ SceneRoots:
   - {fileID: 840910266}
   - {fileID: 1330532360}
   - {fileID: 1911823675}
+  - {fileID: 226632107}
